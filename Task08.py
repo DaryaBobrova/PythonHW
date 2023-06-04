@@ -5,11 +5,11 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-n = int(input("Введите число: "))
-m = int(input("Введите число: "))
-k = int(input("Введите число: "))
+n = int(input("Введите  длину шоколадки: "))
+m = int(input("Введите ширину шоколадки: "))
+k = int(input("Введите кол-во требуемых долек: "))
 
-if k < m*n and (k % m == 0 or k % n == 0):
+if k <= m*n and (k % m == 0 or k % n == 0):
     print(n, m, k, ' -> yes')
 else:
     print(n, m, k, ' -> no')
